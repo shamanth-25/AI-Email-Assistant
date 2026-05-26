@@ -22,7 +22,7 @@ async function generateEmail() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/generate-email",
+            "https://ai-email-assistant-v1.onrender.com/generate-email",
             {
                 method: "POST",
 
