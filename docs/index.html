@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Email Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>AI Email Assistant</h1>
+
+        <select id="purpose">
+            <option>Leave Request</option>
+            <option>Job Application</option>
+            <option>Internship Inquiry</option>
+            <option>Meeting Request</option>
+            <option>Resignation</option>
+            <option>Apology Email</option>
+            <option>Follow-up Email</option>
+        </select>
+
+        <select id="tone">
+            <option>Professional</option>
+            <option>Friendly</option>
+            <option>Formal</option>
+            <option>Polite</option>
+        </select>
+
+        <textarea
+            id="details"
+            placeholder="Enter email details..."
+        ></textarea>
+
+        <div class="button-group">
+            <button onclick="generateEmail()">
+                Generate Email
+            </button>
+
+            <button class="copy-btn" onclick="copyEmail()">
+                Copy Email
+            </button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Generating AI Email...</p>
+        </div>
+
+        <div id="output"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

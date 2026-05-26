@@ -1,0 +1,172 @@
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+
+    padding: 20px;
+}
+
+.container {
+
+    width: 100%;
+    max-width: 750px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.3);
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+h1 {
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+    font-size: 42px;
+}
+
+select,
+textarea,
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    border: none;
+
+    font-size: 16px;
+}
+select,
+textarea {
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+textarea::placeholder {
+    color: #ddd;
+}
+
+select option {
+    color: black;
+}
+button {
+
+    background: linear-gradient(
+        to right,
+        #0072ff,
+        #00c6ff
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0,198,255,0.4);
+}
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.copy-btn {
+    background: linear-gradient(
+        to right,
+        #11998e,
+        #38ef7d
+    );
+}
+#output {
+
+    margin-top: 25px;
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    color: white;
+
+    white-space: pre-wrap;
+
+    line-height: 1.7;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    max-height: 450px;
+
+    overflow-y: auto;
+}
+.loading {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+
+    border: 5px solid rgba(255,255,255,0.2);
+    border-top: 5px solid #00c6ff;
+
+    border-radius: 50%;
+
+    margin: 0 auto 10px;
+
+    animation: spin 1s linear infinite;
+}
